@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Unit\PooledObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Unit\DnsResolver_Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
