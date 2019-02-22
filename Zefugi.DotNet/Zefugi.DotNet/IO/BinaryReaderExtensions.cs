@@ -5,21 +5,7 @@ namespace Zefugi.DotNet.IO
 {
     public static class BinaryReaderExtensions
     {
-        public static bool TryRead7BitEncodedInt(this BinaryReader reader, outout int val)
-        {
-            try
-            {
-                val = reader.Read7BitEncodedInt();
-                return true;
-            }
-            catch
-            {
-                val = default(int);
-                return false;
-            }
-        }
-
-        public static bool TryReadBoolean(this BinaryReader reader, outout bool val)
+        public static bool TryReadBoolean(this BinaryReader reader, out bool val)
         {
             try
             {
@@ -33,7 +19,7 @@ namespace Zefugi.DotNet.IO
             }
         }
 
-        public static bool TryReadByte(this BinaryReader reader, outout byte val)
+        public static bool TryReadByte(this BinaryReader reader, out byte val)
         {
             try
             {
